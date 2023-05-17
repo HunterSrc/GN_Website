@@ -1,0 +1,105 @@
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+
+  background: url(../images/wall.webp) no-repeat center center fixed;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+}
+
+.header {
+  margin: 1rem 0rem 0rem 1rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.menu-item {
+  padding: 0;
+  margin: 2rem;
+  color: red;
+  font-size: 1.5rem;
+  text-decoration: none;
+}
+
+.menu-item a:visited {
+  color: red;
+}
+
+.menu-item:hover {
+  color: black;
+}
+
+.logo {
+  margin-top: 1rem;
+  width: max(30vw, 450px);
+}
+
+.main-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+.modal {
+  display: none;
+  position: fixed; 
+  z-index: 1; 
+  left: 0;
+  top: 0;
+  width: 100%; 
+  height: 100%; 
+  overflow: auto; 
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4);
+}
+
+.modalContent {
+  background-color: #fefefe;
+  margin: 15% auto; 
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+}
+
+.info {
+  display: none;
+}
+
+.contatti {
+  display: none;
+}
+
+.upcoming-text {
+  margin-top: 0rem;
+  font-family: 'Permanent Marker', cursive;
+  font-size: 2rem;
+  height: auto;
+}
+
+.link-container {
+  margin: 2rem 0 0 0;
+  height: 4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.link-item {
+  padding: 0 1.5rem 0 0;
+  width: 2rem;
+}
+
+@media only screen and (max-device-width: 640px){
+
+  .link-item {
+    padding: 0 3rem 0 0;
+    width: 2rem;
+  }
+}
+
+
