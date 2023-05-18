@@ -10,7 +10,7 @@
     <title>Goodbye Neverland!</title>
 
     <link rel="icon" type="image/x-icon" href="images/favicon.ico" />
-    <link href="./css/main.css" rel="stylesheet" />
+    <link rel="stylesheet" href="assets/css/main.css" />
 
     <!-- Google fonts -->
     <link
@@ -23,74 +23,184 @@
       href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap"
       rel="stylesheet"
     />
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, user-scalable=no"
+    />
+    <noscript
+      ><link rel="stylesheet" href="assets/css/noscript.css"
+    /></noscript>
   </head>
   <body>
-    <!-- HEADER -->
-    <div class="header">
-      <div>
-        <img
-          class="logo"
-          src="images/gn_logo_red.png"
-          alt="Logo Goodbye Neverland!"
-        />
-      </div>
-      <div class="column"></div>
-      <div style="display: flex; justify-content: end; gap: 1rem">
-        <a class="menu-item" onclick="toggleInfo();"> INFO </a>
-        <a class="menu-item" onclick="toggleContatti();"> CONTATTI </a>
-      </div>
-    </div>
+    <header id="header">
+      <img
+        class="logo-header"
+        src="images/goodbye_neverland_simbolo_red.png"
+        alt="Logo Goodbye Neverland!"
+      />
+      <nav>
+        <ul>
+          <li><a href="#intro">Intro</a></li>
+          <li><a href="#one">Chi siamo</a></li>
+          <li><a href="#work">La nostra Musica</a></li>
+          <li><a href="#video">Video</a></li>
+        </ul>
+      </nav>
+    </header>
 
-    <div class="modal">
-      <div class="contatti modalContent">
-        <span class="close" onclick="closeModal();">&times</span>
-        <h1>Contatti</h1>
+    <!-- Intro -->
+    <section id="intro" class="main style1 dark fullscreen">
+      <div class="content">
+        <header>
+          <img
+            class="logo-band"
+            src="images/gn_logo_red.png"
+            alt="Logo Goodbye Neverland!"
+          />
+        </header>
+        <p>Benvenuti nel sito della band più scalmata della romagna</p>
+        <footer>
+          <a href="#one" class="button style2 down">Vai giù</a>
+        </footer>
       </div>
-      <div class="info modalContent">
-        <span class="close" onclick="closeModal();">&times</span>
-        <h1>Bio</h1>
-  
-        <h3>Scheda tecnica download</h3>
+    </section>
+
+    <!-- One -->
+    <section id="one" class="main style2 right dark fullscreen flex-box">
+      <div class="content box style2">
+        <header>
+          <h2>Chi siamo</h2>
+        </header>
+        <p>
+          Goodbye Neverland è una band pop-punk italiana composta da sei amici:
+          Dario Voce, Roberto Voce, Stefano Basso, Emanuele Batteria, Andrea
+          Chitarra e Francesco Chitarra. Il progetto ha preso vita nel 2020
+          durante la quarantena, quando Dario ha deciso di riavvicinarsi alla
+          musica, riarrangiando cover pop e pubblicando il suo primo singolo,
+          "Crederci Ancora". Dopo vari cambi di formazione, nel dicembre 2022
+          hanno consolidato la loro attuale formazione con la pubblicazione del
+          brano "Cuori in affitto". Ora la band è pronta per il futuro, con
+          nuovi singoli in arrivo nel 2023, promettendo di continuare a suonare
+          il loro pop-punk unico e coinvolgente.
+        </p>
       </div>
-    </div>
+      <a href="#work" class="button style2 down anchored">Next</a>
+    </section>
 
-    <!-- MAIN CONTENT -->
-    <div class="main-content">
-      <h2 class="upcoming-text">Ascolta Ora</h2>
-
-      <div>
-        <iframe
-          width="560"
-          height="315"
-          src="https://www.youtube.com/embed/RvBP2GxRdPY"
-          title="YouTube video player"
-          frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          allowfullscreen
-        ></iframe>
+    <!-- Two -->
+    <!-- <section id="work" class="main style2 left dark fullscreen">
+      <div class="content box style2">
+        <header>
+          <h2>Ascolta l'ultimo singolo</h2>
+        </header>
+        <div class="container-video">
+          <iframe
+            class="iframe-video"
+            src="https://www.youtube.com/embed/RvBP2GxRdPY"
+            title="YouTube video player"
+            frameborder="0"
+            style="border-radius:12px"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen
+          ></iframe>
+        </div>
       </div>
+      <a href="#work" class="button style2 down anchored">Next</a>
+    </section> -->
 
-      <!-- LINKS -->
-      <div class="link-container">
-        <a
-          href="https://www.instagram.com/goodbyeneverlandofficial/"
-          target="_blank"
-          ><img class="link-item" src="images/insta.svg" alt="Instagram"
-        /></a>
-        <a
-          href="https://open.spotify.com/artist/6tCNzEAQzf5O1VHKbAIuo2"
-          target="_blank"
-          ><img class="link-item" src="images/spotify.svg" alt="Spotify"
-        /></a>
-        <a href="https://www.youtube.com/GoodbyeNeverland" target="_blank"
-          ><img class="link-item" src="images/youtube.svg" alt="Youtube"
-        /></a>
-        <a href="https://www.facebook.com/GoodByeNeverland/" target="_blank"
-          ><img class="link-item" src="images/fbb.svg" alt="Facebook"
-        /></a>
+    <!-- Work -->
+    <section id="work" class="main style3 primary fullscreen">
+      <div class="content">
+        <header>
+          <h2 style="color: white">Scoprici su Spotify</h2>
+        </header>
+
+        <!-- Gallery  -->
+        <div class="gallery">
+          <iframe
+            style="border-radius: 12px; margin-bottom: 1rem;"
+            src="https://open.spotify.com/embed/track/0VhDJQAEgRVTQlGzgb3PPA?utm_source=generator"
+            width="100%"
+            height="152"
+            frameborder="0"
+            allowfullscreen=""
+            allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+            loading="lazy"
+          ></iframe>
+          <iframe
+            style="border-radius: 12px"
+            src="https://open.spotify.com/embed/track/2uASwn92aQVTJKae8BnT50?utm_source=generator"
+            width="100%"
+            height="152"
+            frameborder="0"
+            allowfullscreen=""
+            allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+            loading="lazy"
+          ></iframe>
+        </div>
       </div>
-    </div>
+      <a href="#video" class="button style2 down anchored">Next</a>
+    </section>
 
-    <script src="main.js" type="text/javascript" />
+    <!-- Contact -->
+    <section id="video" class="main style3 primary fullscreen">
+      <div class="content">
+        <header>
+          <h2 style="color: white">Scoprici su Youtube</h2>
+        </header>
+        <div class="gallery container-video">
+          <iframe
+            class="iframe-video"
+            src="https://www.youtube.com/embed/RvBP2GxRdPY"
+            title="YouTube video player"
+            frameborder="0"
+            style="border-radius: 12px"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen
+            loading="lazy"
+          ></iframe>
+        </div>
+      </div>
+      <a href="#intro" class="button style2 down anchored">Next</a>
+    </section>
+
+    <!-- Footer -->
+    <footer id="footer">
+      <!-- Icons -->
+      <ul class="icons">
+        <li>
+          <a href="#" class="icon brands fa-twitter"
+            ><span class="label">Twitter</span></a
+          >
+        </li>
+        <li>
+          <a href="#" class="icon brands fa-facebook-f"
+            ><span class="label">Facebook</span></a
+          >
+        </li>
+        <li>
+          <a href="#" class="icon brands fa-instagram"
+            ><span class="label">Instagram</span></a
+          >
+        </li>
+      </ul>
+
+      <!-- Menu -->
+      <ul class="menu">
+        <li>&copy; Goodbye Neverland</li>
+      </ul>
+    </footer>
+
+    <!-- Scripts -->
+
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/jquery.poptrox.min.js"></script>
+    <script src="assets/js/jquery.scrolly.min.js"></script>
+    <script src="assets/js/jquery.scrollex.min.js"></script>
+    <script src="assets/js/browser.min.js"></script>
+    <script src="assets/js/breakpoints.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <script src="assets/js/main.js"></script>
   </body>
 </html>
