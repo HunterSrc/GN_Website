@@ -2365,7 +2365,7 @@ body.is-touch .main {
 /* Intro */
 
 #intro {
-  background: url("images/overlay.png"), url("../../images/intro.jpg");
+  background: url("images/overlay.png"), url("../../images/intro.webp");
   background-size: 256px 256px, cover;
   background-attachment: fixed, fixed;
   background-position: top left, bottom center;
@@ -2375,7 +2375,7 @@ body.is-touch .main {
 /* One */
 
 #one {
-  background: url("images/overlay.png"), url("../../images/one.jpg");
+  background: url("images/overlay.png"), url("../../images/one.webp");
   background-size: 256px 256px, cover;
   background-attachment: fixed, fixed;
   background-position: top left, center center;
@@ -2390,7 +2390,7 @@ body.is-touch .main {
   background-position: top left, center center;
 }
 #work {
-  background: url("images/overlay.png"), url("../../images/gn_cia_art_BG.png");
+  background: url("images/overlay.png"), url("../../images/gn_cia_art_BG.webp");
   background-size: 256px 256px, cover;
   background-attachment: fixed, fixed;
   background-position: top left, center center;
@@ -2399,7 +2399,7 @@ body.is-touch .main {
 /* Contact */
 
 #video {
-  background: url("images/overlay.png"), url("../../images/last.jpg");
+  background: url("images/overlay.png"), url("../../images/last.webp");
   background-size: 256px 256px, cover;
   background-attachment: fixed, fixed;
   background-position: top left, center center;
